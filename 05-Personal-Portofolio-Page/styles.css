@@ -20,7 +20,7 @@ body {
 
 .hero {
     background-color: #fff;
-    padding: 100px 0;
+    padding: 200px 0;
     text-align: center;
 }
 
@@ -65,4 +65,26 @@ body {
 
 .category-card:hover .category-overlay {
     display: block;
+}
+
+.grey-button {
+    color: black;
+    background-color: #f0f0f0;
+    border-color: black;
+    border-radius: 3px;
+    border-width: 1px;
+    transition: background-color 0.3s;
+    
+}
+
+.grey-button:hover {
+    background-color: #afafaf;
+    transform: translateY(8px);
+}
+
+/*"Deletes" footer when on phone */
+@media only screen and (max-width: 400px) {
+    #footer {
+        opacity: 0;
+    }
 }

@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoePrime - Premium Footwear</title>
+    <title>Singul0 Portfolio Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="shoeprime_logo.png" alt="ShoePrime Logo"></a>
+                <a class="navbar-brand" href="#"><img src="img/singul0_profilepic.png" alt="My profile picture"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,52 +37,57 @@
         <section id="welcome-section" class="hero">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h1>Step into Style</h1>
-                        <p>Discover our premium collection of handcrafted shoes designed for comfort and elegance.</p>
-                        <a href="#featured" class="btn btn-primary btn-lg">Shop Now</a>
+                    <h1>Heyo! I'm Singul0</h1>
+                    <p> I'm an amateur hobbyist coder, interested in open source contributing. Started out by contributing to an FOSS game that I frequented, and it all snowballed from there. </p>
+                </div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col">
+                        <a target="_blank" href="https://github.com/Singul0" class="btn btn-primary btn-lg grey-button">Github</a>
+                        </div>
+                        <div class="col">
+                        <a target="_blank" href="https://singul0.github.io/" class="btn btn-primary btn-lg grey-button">Pages</a>
+                        </div>
+                        <div class="col">
+                            <a target="_blank" href="https://x.com/humanl1ke" class="btn btn-primary btn-lg grey-button">Twitter</a>
+                            </div>
                     </div>
-                    <div class="col-lg-6">
-                        <video width=100% height=100% autoplay loop>
-                            <source src="guy_running.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video> 
-                    </div>
+                </div>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5">Featured Products</h2>
+                <h2 class="text-center mb-5">My Projects</h2>
                 <div class="row">
                     <div class="col-md-4 mb-4">
-                        <div class="card product-card">
-                            <img src="classic_leather_sneakers.jpg" class="card-img-top" alt="Classic Sneaker">
+                        <div class="card product-card project-tile">
+                            <img src="img/01_arduino-calculator-1330x864.png" class="card-img-top" alt="Arduino Calculator">
                             <div class="card-body">
-                                <h5 class="card-title">Classic Sneaker</h5>
-                                <p class="card-text">Timeless design meets modern comfort.</p>
-                                <a href="#" class="btn btn-outline-primary">View Details</a>
+                                <h5 class="card-title">Arduino Calculator</h5>
+                                <p class="card-text">Arduino Project that I did for my free-form project class.</p>
+                                <a target="_blank" href="https://github.com/Singul0/random-assortment-of-stuff/tree/main/Arduino_Calculator'" class="btn btn-outline-primary">View Project</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card product-card">
-                            <img src="elegant_heel.jpg" class="card-img-top" alt="Elegant Heel">
+                        <div class="card product-card project-tile">
+                            <img src="img/03_Responsive-Web-Design-1330x864.png" class="card-img-top" alt="Responsive Web Design Certificate">
                             <div class="card-body">
-                                <h5 class="card-title">Elegant Heel</h5>
-                                <p class="card-text">Sophistication for any occasion.</p>
-                                <a href="#" class="btn btn-outline-primary">View Details</a>
+                                <h5 class="card-title">Responsive Web Design Certificate</h5>
+                                <p class="card-text">Completed the Responsive Web Design program from FreeCodeCamp.</p>
+                                <a target="_blank" href="https://www.freecodecamp.org/fccbf3af13c-89f3-4361-be64-563af64a1983" class="btn btn-outline-primary">View Project</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4">
-                        <div class="card product-card">
-                            <img src="sport_runner.jpg" class="card-img-top" alt="Sport Runner">
+                        <div class="card product-card project-tile">
+                            <img src="img/02_tgstation-contributor-1330x864.png" class="card-img-top" alt="Active Contributor for /tg/station'">
                             <div class="card-body">
-                                <h5 class="card-title">Sport Runner</h5>
-                                <p class="card-text">Performance meets style.</p>
-                                <a href="#" class="btn btn-outline-primary">View Details</a>
+                                <h5 class="card-title">Active Contributor for /tg/station</h5>
+                                <p class="card-text">I'm an active contributor for /tg/station codebase of Space Station 13. One of the biggest and most active FOSS video game codebase.</p>
+                                <a target="_blank" href="https://github.com/tgstation/tgstation/pulls?q=is%3Apr+author%3ASingul0" class="btn btn-outline-primary">View Project</a>
                             </div>
                         </div>
                     </div>
@@ -90,25 +95,30 @@
             </div>
         </section>
 
-        <section id="contact" class="py-5">
+        <section id="contact" class="py-5 hero">
             <div class="container">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <h1>Contact me!</h1>
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <h2>About ShoePrime</h2>
-                        <p>At ShoePrime, we believe that great shoes are the foundation of great style. Our passion for quality craftsmanship and innovative design drives us to create footwear that not only looks amazing but feels incredible too.</p>
-                        <p>With a focus on comfort, durability, and style, we strive to provide the best possible experience for our customers. Whether you're dressing up or dressing down, we've got the perfect shoes to match your unique personality.</p>
+                    <div class="col">
+                    <a target="_blank" id="profile-link" href="https://github.com/Singul0" class="btn btn-primary btn-lg grey-button">Github</a>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="showcase-shoes.jpg" alt="About ShoePrime" class="img-fluid rounded shadow">
+                    <div class="col">
+                    <a target="_blank" href="https://singul0.github.io/" class="btn btn-primary btn-lg grey-button">Pages</a>
                     </div>
+                    <div class="col">
+                        <a target="_blank" href="https://x.com/humanl1ke" class="btn btn-primary btn-lg grey-button">Twitter</a>
+                        </div>
                 </div>
+            </div>
+            </div>
             </div>
         </section>
 
         <footer class="bg-dark text-white py-3">
             <div class="container text-center">
-                <p>&copy; 2024 ShoePrime. All rights reserved.</p>
-                <p>Royalty Photos By Freepik</p>
+                <p>&copy; 2024 Singul0. All rights reserved.</p>
             </div>
         </footer>
 
